@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compartible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initioal-scale = 1.0">
+
+    <title>DOM learning with chai aur code</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <div class="parent">
+        
+        <div class = "day">monday</div>
+        <div class = "day">tuesday</div>
+        <div class = "day">wednesday</div>
+        <div class = "day">thurday</div>
+        <div class = "day">friday</div>
+        <div class = "day">saturday</div>
+        <div class = "day">sunday</div>
+
+    </div>
+</body>
+<script>
+    const parent = document.querySelectorAll('.parent')
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent,children[i].innerHTML);
+        
+        
+    }
+    parent.children[1].style.color = "orange"
+    
+</script>
+</html>
